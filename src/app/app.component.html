@@ -1,14 +1,22 @@
 <div class="content-container">
   <div class="search-field">
     <div class="search-input-wrapper">
-      <input placeholder="Search for movie or tv show"/>
+      <input type="text" pInputText placeholder="Search for movie or tv show" />
     </div>
   </div>
-  <div class="tab-group">
+  <!-- <div class="tab-group">
     <div class="tab" [ngClass]="{'active': moviesFocused}" (click)="focus(true, false)">Movies</div>
     <div class="tab" [ngClass]="{'active': tvShowsFocused}" (click)="focus(false, true)">Tv Shows</div>
   </div>
   <div class="tab-content">
     <app-media-list [mediaList]="mediaList"></app-media-list>
-  </div>
+  </div> -->
+  <p-tabView>
+    <p-tabPanel header="Movies">
+      <app-media-list [mediaList]="movies"></app-media-list>
+    </p-tabPanel>
+    <p-tabPanel header="TV Shows">
+      <app-media-list [mediaList]="tvShows"></app-media-list>
+    </p-tabPanel>
+</p-tabView>
 </div>

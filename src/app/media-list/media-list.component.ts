@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { MediaContent } from 'src/models/media-content';
+import { MediaContent } from 'src/shared/models/media-content';
 
 @Component({
   selector: 'app-media-list',
@@ -8,7 +8,7 @@ import { MediaContent } from 'src/models/media-content';
 })
 export class MediaListComponent implements OnInit {
   @Input()
-  mediaList: MediaContent[] = [];
+  mediaList!: MediaContent[];
 
   constructor() { }
 

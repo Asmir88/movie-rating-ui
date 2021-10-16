@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { MediaCardComponent } from './media-list/media-card/media-card.component';
-import { MediaListComponent } from './media-list/media-list.component';
+import { InputTextModule } from 'primeng/inputtext';
+import { TabViewModule } from 'primeng/tabview';
+import { MediaListModule } from './media-list/media-list.module';
+import { SharedModule } from 'src/shared/shared.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    MediaCardComponent,
-    MediaListComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    InputTextModule,
+    TabViewModule,
+    MediaListModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

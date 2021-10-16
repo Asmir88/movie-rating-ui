@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MediaContent } from 'src/models/media-content';
+import { MediaContent } from 'src/shared/models/media-content';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +12,48 @@ export class AppComponent {
   tvShowsFocused = false;
 
   movies = [
+    {
+      title: "James bond",
+      description: "A movies about spy agent 007 - James Bond",
+      cast: [ "James bond actor", "Enemy actor"],
+      yearReleased: 1999,
+      rating: 4.5
+    },
+    {
+      title: "James bond",
+      description: "A movies about spy agent 007 - James Bond",
+      cast: [ "James bond actor", "Enemy actor"],
+      yearReleased: 1999,
+      rating: 4.5
+    },
+    {
+      title: "James bond",
+      description: "A movies about spy agent 007 - James Bond",
+      cast: [ "James bond actor", "Enemy actor"],
+      yearReleased: 1999,
+      rating: 4.5
+    },
+    {
+      title: "James bond",
+      description: "A movies about spy agent 007 - James Bond",
+      cast: [ "James bond actor", "Enemy actor"],
+      yearReleased: 1999,
+      rating: 4.5
+    },
+    {
+      title: "James bond",
+      description: "A movies about spy agent 007 - James Bond",
+      cast: [ "James bond actor", "Enemy actor"],
+      yearReleased: 1999,
+      rating: 4.5
+    },
+    {
+      title: "James bond",
+      description: "A movies about spy agent 007 - James Bond",
+      cast: [ "James bond actor", "Enemy actor"],
+      yearReleased: 1999,
+      rating: 4.5
+    },
     {
       title: "James bond",
       description: "A movies about spy agent 007 - James Bond",

@@ -1,12 +1,17 @@
-<p>media-card works!</p>
-<div class="media-box">
-    <div class="media-group-left">
-        <div class="media-img">Image</div>
-    </div>
-    <div class="media-group-right">
-        <div class="media-title">Title (Year)</div>
-        <div class="media-description">Description</div>
-        <div class="media-cast">Cast</div>
-        <div class="media-rating">4.5</div>
-    </div>
-</div>
+<p-card [header]="mediaContent!.title" [subheader]="mediaContent!.yearReleased.toString()" [style]="{width: '360px'}" styleClass="p-card-shadow">
+    <ng-template pTemplate="header">
+        <img alt="Image" src="https://m.media-amazon.com/images/M/MV5BMDI5ZWJhOWItYTlhOC00YWNhLTlkNzctNDU5YTI1M2E1MWZhXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_QL75_UX140_CR0,0,140,207_.jpg">
+
+        <div class="rating-section">
+            <span class="average-rating"><i class="pi pi-star" title="Average rating"></i> <span class="current-rating">{{mediaContent?.rating}}</span></span>
+            <span class="rate-btn" (click)="openRatingDialog()"><i class="pi pi-star-o" title="Rate"> <span class="current-rating">{{currentRating}}</span></i></span>
+        </div>
+    </ng-template>
+    
+    <p-panel header="More details" [toggleable]="true" [collapsed]="true" expandIcon="pi pi-angle-down" collapseIcon="pi pi-angle-up">
+        <p>
+            {{mediaContent!.description}}
+        </p>
+        <p>Cast: Brad Pitt, Anthony Hopkins</p>
+    </p-panel>
+</p-card>

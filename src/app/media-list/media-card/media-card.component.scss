@@ -1,22 +1,32 @@
-.media-box {
-    border: 1px solid #aaa;
-    border-radius: 5px;
-    margin: 15px;
+:host {
+    box-sizing: border-box;
+    width: 25%;
+    float: left;
+    padding: 5px 15px;
+}
 
-    .media-group-left, .media-group-right {
-        display: inline-block;
+.rating-section {
+    padding: 15px 5px;
+
+    .rate-btn {
+        float: right;
+        cursor: pointer;
     }
 
-    .media-group-left {
-        border-right: 1px solid #aaa;
-        width: 40%;
+    .average-rating i {
+        color: rgb(238, 226, 52);
     }
 
-    .media-group-right {
-        width: 60%;
+    .average-rating, .rate-btn, .current-rating {
+        font-size: 20px;
     }
 
-    .media-title {
-        border-bottom: 1px solid #aaa;
+    .current-rating {
+        margin-left: 5px;
     }
+}
+
+
+p-card {
+    display: flex
 }

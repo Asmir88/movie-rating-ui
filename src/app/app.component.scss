@@ -1,6 +1,6 @@
 .content-container {
     margin: 100px auto;
-    width: 980px;
+    width: 1200px;
 
     .search-field {
         .search-input-wrapper {
@@ -14,30 +14,8 @@
                 width: 100%;
             }
         }
-    }
-    
-    .tab-group {
-        width: 100%;
-        display: block;
-        margin-top: 70px;
-        border-bottom: 1px solid #aaa;
-        width: 100%;
-        
-        .tab {
-            font-weight: 300;
-            font-size: 20px;
-            padding: 5px 10px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            display: inline-block;
-            border: 1px solid #aaa;
-            cursor: pointer;
-        }
-    
-        .active {
-            background-color: #9bc8c8;
-            font-weight: bold;
-        }
+
+        margin-bottom: 70px;
     }
 }
 
