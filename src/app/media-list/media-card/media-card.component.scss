@@ -1,0 +1,22 @@
+.media-box {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin: 15px;
+
+    .media-group-left, .media-group-right {
+        display: inline-block;
+    }
+
+    .media-group-left {
+        border-right: 1px solid #aaa;
+        width: 40%;
+    }
+
+    .media-group-right {
+        width: 60%;
+    }
+
+    .media-title {
+        border-bottom: 1px solid #aaa;
+    }
+}
