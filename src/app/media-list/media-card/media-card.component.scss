@@ -1,8 +1,26 @@
 :host {
-    box-sizing: border-box;
-    width: 25%;
-    float: left;
-    padding: 10px 15px;
+    @media only screen and (min-width: 1200px) {
+        box-sizing: border-box;
+        width: 25%;
+        float: left;
+        padding: 10px 15px;
+    }
+
+    @media only screen and (min-width: 900px) and (max-width: 1199px) {
+        box-sizing: border-box;
+        width: 33%;
+        float: left;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 899px) {
+        box-sizing: border-box;
+        width: 50%;
+        float: left;
+        padding: 10px 15px;
+        text-align: center;
+    }
 }
 
 .details-link {

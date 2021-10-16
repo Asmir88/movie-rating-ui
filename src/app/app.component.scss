@@ -2,9 +2,35 @@
     margin: 100px auto;
     width: 1200px;
 
+    @media only screen and (min-width: 1200px) {
+        margin: 100px auto;
+        width: 1200px;
+    }
+
+    @media only screen and (min-width: 900px) and (max-width: 1199px) {
+        margin: 50px auto;
+        width: 800px;
+    }
+
+    @media only screen and (max-width: 899px) {
+        margin: 20px auto;
+        width: 400px;
+    }
+
     .search-field {
         .search-input-wrapper {
             margin: 0 100px;
+            @media only screen and (min-width: 1200px) {
+                margin: 0 100px;
+            }
+        
+            @media only screen and (min-width: 900px) {
+                margin: 0 50px;
+            }
+        
+            @media only screen and (max-width: 899px) {
+                margin: 0 20px;
+            }
 
             input {
                 font-size: 16px;
