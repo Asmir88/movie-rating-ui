@@ -1,0 +1,20 @@
+.rating-section {
+    padding: 15px 5px;
+
+    .rate-btn {
+        float: right;
+        cursor: pointer;
+    }
+
+    .average-rating i {
+        color: rgb(238, 226, 52);
+    }
+
+    .average-rating, .rate-btn, .current-rating {
+        font-size: 20px;
+    }
+
+    .current-rating {
+        margin-left: 5px;
+    }
+}

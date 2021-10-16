@@ -11,7 +11,7 @@ export class RatingComponent implements OnInit {
   maxRating = environment.maxRating;
   rating: number | undefined;
 
-  constructor(public ref: DynamicDialogRef) { }
+  constructor(private ref: DynamicDialogRef) { }
 
   ngOnInit(): void {
   }

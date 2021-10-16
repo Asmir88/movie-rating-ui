@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MediaContent } from 'src/shared/models/media-content';
 import { DialogService } from 'primeng/dynamicdialog';
-import { RatingComponent } from 'src/shared/rating/rating.component';
+import { MediaDetailsComponent } from './media-details/media-details.component';
 
 @Component({
   selector: 'app-media-card',
@@ -19,17 +19,13 @@ export class MediaCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  openRatingDialog() {
-    const ref = this.dialogService.open(RatingComponent, {
-      header: `Rate this\n"${this.mediaContent?.title}"`,
-      width: '300px'
-    });
-
-    ref.onClose.subscribe((rating: number) =>{
-      if (rating) {
-          console.log(rating);
-          this.currentRating = rating;
+  openDetailsDialog(mediaContent: MediaContent) {
+    this.dialogService.open(MediaDetailsComponent, {
+      width: "50%",
+      style: { padding: "0 1.5rem" },
+      data: {
+        mediaContent
       }
-  });
+    });
   }
 }

@@ -1,0 +1,38 @@
+.details-container {
+    display: flex;
+}
+
+.media-img {
+    flex: 1;
+
+    img {
+        width: 220px;
+    }
+}
+
+.p-dialog-header, .p-dialog-title, .p-dialog-titlebar {
+    padding: 0!important;
+}
+
+.media-details {
+    flex: 2;
+    p {
+        margin: 0 15px;
+    }
+
+    hr {
+        margin: 15px;
+    }
+    
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.year-released {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}

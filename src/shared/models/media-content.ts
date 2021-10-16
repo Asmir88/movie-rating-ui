@@ -4,4 +4,5 @@ export interface MediaContent {
     cast: string[];
     yearReleased: number;
     rating: number;
+    imageUrl: string;
 }

@@ -2,27 +2,17 @@
     box-sizing: border-box;
     width: 25%;
     float: left;
-    padding: 5px 15px;
+    padding: 10px 15px;
 }
 
-.rating-section {
-    padding: 15px 5px;
+.details-link {
+    color: #495057;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
 
-    .rate-btn {
-        float: right;
-        cursor: pointer;
-    }
-
-    .average-rating i {
-        color: rgb(238, 226, 52);
-    }
-
-    .average-rating, .rate-btn, .current-rating {
-        font-size: 20px;
-    }
-
-    .current-rating {
-        margin-left: 5px;
+    &:hover {
+        text-decoration: underline;
     }
 }
 
