@@ -31,7 +31,6 @@ export class MediaRatingSectionComponent implements OnInit {
 
     ref.onClose.subscribe((rating: number) =>{
       if (rating) {
-          console.log(rating);
           this.currentRating = rating;
           this.mediaService.rate(rating, this.mediaContent.id).subscribe(avgRating => this.averageRating = avgRating);
       }

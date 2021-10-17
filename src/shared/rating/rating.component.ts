@@ -17,7 +17,6 @@ export class RatingComponent implements OnInit {
   }
 
   rateContent() {
-    console.log(this.rating);
     this.ref.close(this.rating)
   }
 }

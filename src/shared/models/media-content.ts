@@ -5,7 +5,7 @@ export interface MediaContent {
     actors: Actor[];
     releaseDate: Date;
     rating: number;
-    imageUrl: string;
+    imgUrl: string;
     type: MediaType;
 }
 
