@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { MediaContent } from 'src/shared/models/media-content';
 import { DialogService } from 'primeng/dynamicdialog';
 import { MediaDetailsComponent } from './media-details/media-details.component';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-media-card',

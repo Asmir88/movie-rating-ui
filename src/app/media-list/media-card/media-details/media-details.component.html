@@ -3,11 +3,11 @@
         <img width="360" [src]="mediaContent.imageUrl">
         <app-media-rating-section [mediaContent]="mediaContent"></app-media-rating-section>
         <div class="title">{{mediaContent!.title}}</div>
-        <div class="year-released">{{mediaContent!.yearReleased}}</div>
+        <div class="year-released">{{(mediaContent!.releaseDate | date:'y')!}}</div>
     </div>
     <div class="media-details">
         <p>{{mediaContent.description}}</p>
         <hr>
-        <p><b>Cast: </b>{{mediaContent.cast}}</p>
+        <p><b>Cast: </b>{{cast}}</p>
     </div>
 </div>

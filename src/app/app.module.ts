@@ -6,6 +6,7 @@ import { TabViewModule } from 'primeng/tabview';
 import { MediaListModule } from './media-list/media-list.module';
 import { SharedModule } from 'src/shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     TabViewModule,
     MediaListModule,
     SharedModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

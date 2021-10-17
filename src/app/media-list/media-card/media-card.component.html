@@ -1,4 +1,4 @@
-<p-card [header]="mediaContent!.title" [subheader]="mediaContent!.yearReleased.toString()" [style]="{width: '360px'}" styleClass="p-card-shadow">
+<p-card [header]="mediaContent!.title" [subheader]="(mediaContent!.releaseDate | date:'y')!" [style]="{width: '360px'}" styleClass="p-card-shadow">
     <ng-template pTemplate="header">
         <img alt="Image" [src]="mediaContent.imageUrl">
         <app-media-rating-section [mediaContent]="mediaContent"></app-media-rating-section>

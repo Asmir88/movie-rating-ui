@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MediaContent } from 'src/shared/models/media-content';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-media-list',

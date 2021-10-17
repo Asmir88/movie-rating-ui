@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  maxRating: 5
+  maxRating: 5,
+  api: "http://localhost:38353"
 };
 
 /*
