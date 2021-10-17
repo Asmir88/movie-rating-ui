@@ -1,6 +1,6 @@
 <div class="details-container">
     <div class="media-img">
-        <img width="360" [src]="mediaContent.imageUrl">
+        <img width="360" [src]="mediaContent.imgUrl">
         <app-media-rating-section [mediaContent]="mediaContent"></app-media-rating-section>
         <div class="title">{{mediaContent!.title}}</div>
         <div class="year-released">{{(mediaContent!.releaseDate | date:'y')!}}</div>
